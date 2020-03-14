@@ -1,0 +1,18 @@
+{
+  "name": "slack_channel_creator",
+  "version": "1.0.0",
+  "main": "src/app.js",
+  "repository": "git@github.com:yeohsoonkeat/slack_channel_creator.git",
+  "author": "Yeoh Soon Keat <yeohsoonkeat18@kit.edu.kh>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon src/app.js"
+  },
+  "dependencies": {
+    "@slack/bolt": "^1.7.0",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
