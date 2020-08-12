@@ -1,6 +1,6 @@
 require("dotenv").config();
 const { App } = require("@slack/bolt");
-const help = require("./modals/help.js"  );
+const help = require("./modals/help.js");
 const create = require("./modals/create.js");
 const { channel_name_validate } = require("./lib");
 
@@ -32,7 +32,6 @@ const createChannel = (channel_name, is_private, user_id) => {
               users: user_id
             })
             .then(async res => {
-              console.log(res);
               if (res.ok) {
                 app.client.conversations
                   .leave({
@@ -89,8 +88,8 @@ app.action("private", ({ ack, payload }) => {
 app.action("help", ({ ack, body, context }) => {
   ack();
   if (!body.view) {
-    displayModal(context.botToken, body.trigger_id, help, false)
-    return
+    displayModal(context.botToken, body.trigger_id, help, false);
+    return;
   }
   app.client.views.push({
     token: context.botToken,
