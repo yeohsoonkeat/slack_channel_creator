@@ -6,7 +6,7 @@
   "author": "Yeoh Soon Keat <yeohsoonkeat18@kit.edu.kh>",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon src/app.js"
+    "start": "nodemon src/channel_creator.js"
   },
   "dependencies": {
     "@slack/bolt": "^1.7.0",
